@@ -1,0 +1,36 @@
+{
+  "headers": {
+    "Content-Type": "text/html"
+  },
+  "server": {
+    "listen": "9999",
+    "location": "alexsite123456",
+    "default_host": {
+      "host": "default",
+      "resources": {
+        "html": "resources/default/html"
+      }
+    },
+    "virtual_hosts": [
+      {
+        "host": "primary.com",
+        "resources": {
+          "html": "resources/test1/html"
+        }
+      },
+      {
+        "host": "alexsite.org",
+        "resources": {
+          "html": "resources/test2/html"
+        }
+      }
+    ]
+  },
+  "status_codes": {
+    "200": "OK",
+    "404": "Not Found",
+    "418": "Im a teapot",
+    "501": "Not Implemented"
+  }
+}
+

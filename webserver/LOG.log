@@ -1,0 +1,19 @@
+INFO:root:Listening at ('127.0.0.1', 9999)
+INFO:root:Connected by ('127.0.0.1', 55854)
+INFO:root:Content-Type: text/html
+
+INFO:root:GET
+b'HTTP/1.1 404 Not Found\r\nContent-Type: text/html\r\n\r\n<h1>404 Not found</h1>'
+{'Connection': 'keep-alive', 'Host': 'primary.com', 'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': 'eb5ceda9-c906-4b5d-9fbe-7b6624281407', 'Accept-Encoding': 'gzip, deflate, br'}
+INFO:root:Connected by ('127.0.0.1', 55859)
+INFO:root:Content-Type: text/html
+
+INFO:root:GET
+b'HTTP/1.1 404 Not Found\r\nContent-Type: text/html\r\n\r\n<h1>404 Not found</h1>'
+{'Connection': 'keep-alive', 'Host': 'primary.com', 'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': '3d0d0a4c-7fc1-46ca-a1dd-4c692f5514b8', 'Accept-Encoding': 'gzip, deflate, br'}
+INFO:root:Connected by ('127.0.0.1', 55900)
+INFO:root:Content-Type: text/html
+
+INFO:root:GET
+b'HTTP/1.1 404 Not Found\r\nContent-Type: text/html\r\n\r\n<h1>404 Not found</h1>'
+{'Connection': 'keep-alive', 'Host': 'primary.com', 'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': '817b0eb4-bad7-44f8-a288-2963dc17e92e', 'Accept-Encoding': 'gzip, deflate, br'}
