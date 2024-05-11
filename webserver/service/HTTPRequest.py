@@ -4,6 +4,7 @@ class HTTPRequest:
         self.uri = None
         self.http_version = "1.1"
         self.headers = dict()
+
         self.parse(data)
 
     def parse(self, data):
@@ -24,3 +25,4 @@ class HTTPRequest:
         if len(lines) > 1:
             tmp_headers = list(map(lambda x: x.decode().strip().split(":"), lines[1:len(lines) - 2]))
             self.headers = {i[0]: i[1].strip() for i in tmp_headers}
+        return True

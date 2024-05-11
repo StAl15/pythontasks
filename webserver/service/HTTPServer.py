@@ -26,7 +26,12 @@ class HTTPServer(TCPServer):
             handler = self.HTTP_501_handler
             self.logger.logging_error(e)
 
-        response = handler(request)
+        try:
+            response = handler(request)
+        except Exception as e:
+            response = self.HTTP_500_handler(request)
+            self.logger.logging_error(e)
+
         self.logger.logging_info(
             f'{request.method}\n{response}\n{request.headers}'
         )
@@ -39,9 +44,38 @@ class HTTPServer(TCPServer):
 
         blank_line = b"\r\n"
 
-        response_body = b"<h1>501 Not Implemented</h1>"
+        response_body = self.get_status_code_html(501).encode()
 
         return b"".join([response_line, response_headers, blank_line, response_body])
+
+    def HTTP_500_handler(self, request):
+        response_line = self.response_line(status_code=500)
+        response_headers = self.response_headers()
+        response_body = self.get_status_code_html(500).encode()
+        blank_line = b"\r\n"
+
+        return b"".join([response_line, response_headers, blank_line, response_body])
+
+    def HTTP_404_handler(self, request):
+        response_line = self.response_line(status_code=404)
+        response_headers = self.response_headers()
+        response_body = self.get_status_code_html(404).encode()
+        blank_line = b"\r\n"
+
+        return b"".join([response_line, response_headers, blank_line, response_body])
+
+    def HTTP_300_handler(self, request):
+        response_line = self.response_line(status_code=300)
+        response_headers = self.response_headers()
+        response_body = self.get_status_code_html(300).encode()
+        blank_line = b"\r\n"
+
+        return b"".join([response_line, response_headers, blank_line, response_body])
+
+    def get_status_code_html(self, status_code):
+        with open(f'resources/default/{status_code}.html') as f:
+            response_body = f.read()
+        return response_body
 
     def handle_GET(self, request):
         filename = request.uri.strip('/')
@@ -49,6 +83,10 @@ class HTTPServer(TCPServer):
 
         current_host = [i for i in self.virtual_hosts if i['host'] == host]
         current_host = current_host[0] if len(current_host) > 0 else self.default_host
+        dir = list(map(lambda x: x.split('.')[0], os.listdir(current_host["resources"]["html"])))
+
+        if dir.count(filename.split('.')[0]) > 1:
+            return self.HTTP_300_handler(request)
 
         if os.path.exists(f'{current_host["resources"]["html"]}/{filename}'):
             response_line = self.response_line(status_code=200)
@@ -61,9 +99,7 @@ class HTTPServer(TCPServer):
             with open(f'{current_host["resources"]["html"]}/{filename}', 'rb') as f:
                 response_body = f.read()
         else:
-            response_line = self.response_line(status_code=404)
-            response_headers = self.response_headers()
-            response_body = b"<h1>404 Not found</h1>"
+            return self.HTTP_404_handler(request)
 
         blank_line = b"\r\n"
 

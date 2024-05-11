@@ -48,6 +48,7 @@ class TCPServer:
         if request.headers['Connection'] == 'keep-alive':
             response_task = asyncio.create_task(self.handle_request(payload))
             response = await response_task
+
             conn.sendall(response)
 
         elif request.headers['Connection'] == 'close':
@@ -55,6 +56,7 @@ class TCPServer:
 
         if not payload:
             conn.close()
+        return True
 
     async def handle_request(self, data):
 

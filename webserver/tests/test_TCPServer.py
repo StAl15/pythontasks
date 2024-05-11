@@ -1,15 +1,14 @@
+import asyncio
 from unittest import TestCase
+
+from webserver.service.TCPServer import TCPServer
 
 
 class TestTCPServer(TestCase):
-    def test_init(self):
-        self.fail()
+    def setUp(self):
+        self.root = TCPServer()
 
-    def test_start(self):
-        self.fail()
-
-    def test_send_message(self):
-        self.fail()
-
-    def test_handle_request(self):
-        self.fail()
+    async def test_send_message(self):
+        init_task = asyncio.create_task(self.root.init())
+        server_socket = await init_task
+        self.assertTrue(self.root.send_message(server_socket))

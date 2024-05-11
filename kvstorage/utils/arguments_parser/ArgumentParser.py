@@ -2,12 +2,10 @@ import argparse
 import sys
 
 from kvstorage.service.Storage import Storage
-from kvstorage.utils.file_handler.FileHandler import FileHandler
 
 
 class ArgumentParser():
     def __init__(self):
-        self.file_handler = FileHandler()
         self.storage_handler = Storage()
         self.parser = argparse.ArgumentParser()
         self.subparsers = self.parser.add_subparsers()

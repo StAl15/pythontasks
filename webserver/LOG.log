@@ -1,19 +1,69 @@
 INFO:root:Listening at ('127.0.0.1', 9999)
-INFO:root:Connected by ('127.0.0.1', 55854)
+INFO:root:Connected by ('127.0.0.1', 57450)
 INFO:root:Content-Type: text/html
 
 INFO:root:GET
-b'HTTP/1.1 404 Not Found\r\nContent-Type: text/html\r\n\r\n<h1>404 Not found</h1>'
-{'Connection': 'keep-alive', 'Host': 'primary.com', 'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': 'eb5ceda9-c906-4b5d-9fbe-7b6624281407', 'Accept-Encoding': 'gzip, deflate, br'}
-INFO:root:Connected by ('127.0.0.1', 55859)
+b'HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <title>Title</title>\n</head>\n<body>\nhahahahahhaahhaha\n</body>\n</html>'
+{'Connection': 'keep-alive', 'Host': 'primary.com', 'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': 'cbd02cf6-23c9-44ee-957d-8df52b72537d', 'Accept-Encoding': 'gzip, deflate, br'}
+INFO:root:Connected by ('127.0.0.1', 57455)
 INFO:root:Content-Type: text/html
 
 INFO:root:GET
-b'HTTP/1.1 404 Not Found\r\nContent-Type: text/html\r\n\r\n<h1>404 Not found</h1>'
-{'Connection': 'keep-alive', 'Host': 'primary.com', 'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': '3d0d0a4c-7fc1-46ca-a1dd-4c692f5514b8', 'Accept-Encoding': 'gzip, deflate, br'}
-INFO:root:Connected by ('127.0.0.1', 55900)
+b'HTTP/1.1 404 Not Found\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <title>404 page</title>\n    <link rel="stylesheet" href="global.css">\n</head>\n<style>\n    body {\n    width: 100vw;\n    height: 100vh;\n    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),\n                  url("");\n}\n\nmain {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translateX(-50%) translateY(-50%);\n    align-items: center;\n    justify-content: center;\n    text-align: center;\n    gap: 20px;\n    display: flex;\n    flex-direction: column;\n\n    * {\n        margin: 0;\n    }\n\n    .title {\n        font-family: sans-serif;\n        color: #fff;\n    }\n    .subtitle {\n        font-family: sans-serif;\n        color: #fff;\n    }\n\n    img {\n        width: 200px;\n        height: 200px;\n    }\n}\n</style>\n<body>\n    <main class="content">\n        <h1 class="title">404 not found</h1>\n        <p class="subtitle">Please, try to visit existing page on this resource</p>\n        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxGZ4gL3-ibz87K6BjE8tUHgdWX7p9iQ-StfnYyMWk5g&s" alt="problem_img" />\n    </main>\n</body>\n</html>'
+{'Connection': 'keep-alive', 'Host': 'primary.com', 'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': '8b24d0b7-9733-4991-8344-d46633f2c479', 'Accept-Encoding': 'gzip, deflate, br'}
+INFO:root:Connected by ('127.0.0.1', 57463)
 INFO:root:Content-Type: text/html
 
 INFO:root:GET
-b'HTTP/1.1 404 Not Found\r\nContent-Type: text/html\r\n\r\n<h1>404 Not found</h1>'
-{'Connection': 'keep-alive', 'Host': 'primary.com', 'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': '817b0eb4-bad7-44f8-a288-2963dc17e92e', 'Accept-Encoding': 'gzip, deflate, br'}
+b'HTTP/1.1 300 Multiple Choices\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <title>404 page</title>\n    <link rel="stylesheet" href="global.css">\n</head>\n<style>\n    body {\n    width: 100vw;\n    height: 100vh;\n    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),\n                  url("");\n}\n\nmain {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translateX(-50%) translateY(-50%);\n    align-items: center;\n    justify-content: center;\n    text-align: center;\n    gap: 20px;\n    display: flex;\n    flex-direction: column;\n\n    * {\n        margin: 0;\n    }\n\n    .title {\n        font-family: sans-serif;\n        color: #fff;\n    }\n    .subtitle {\n        font-family: sans-serif;\n        color: #fff;\n    }\n\n    img {\n        width: 200px;\n        height: 200px;\n    }\n}\n</style>\n<body>\n    <main class="content">\n        <h1 class="title">300 multiple choices</h1>\n        <p class="subtitle">Please, try to visit correct page on this resource</p>\n        <img width="200px" height="200px" src="https://sitechecker.pro/wp-content/uploads/2023/09/300-status-code.png" alt="problem_img" />\n    </main>\n</body>\n</html>'
+{'Connection': 'keep-alive', 'Host': 'primary.com', 'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': 'e719b1ec-4e94-4ee9-a423-795a60a9ec14', 'Accept-Encoding': 'gzip, deflate, br'}
+INFO:root:Connected by ('127.0.0.1', 57466)
+INFO:root:Content-Type: text/html
+
+INFO:root:Content-Type: text/html
+
+ERROR:root:[Errno 21] Is a directory: 'resources/test1/html/'
+INFO:root:GET
+b'HTTP/1.1 500 Bad Gateway\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <title>501 page</title>\n</head>\n\n<style>\n    body {\n    width: 100vw;\n    height: 100vh;\n    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),\n                  url("");\n}\n\nmain {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translateX(-50%) translateY(-50%);\n    align-items: center;\n    justify-content: center;\n    text-align: center;\n    gap: 20px;\n    display: flex;\n    flex-direction: column;\n\n    * {\n        margin: 0;\n    }\n\n    .title {\n        font-family: sans-serif;\n        color: #fff;\n    }\n    .subtitle {\n        font-family: sans-serif;\n        color: #fff;\n    }\n\n    img {\n        width: 200px;\n        height: 200px;\n    }\n}\n</style>\n\n<body>\n    <main class="content">\n        <h1 class="title">500 bad gateway</h1>\n        <p class="subtitle">Something went wrong</p>\n        <img width="200px" height="200px" src="https://sitechecker.pro/wp-content/uploads/2023/07/500-status-code.png" alt="robot404" />\n    </main>\n</body>\n</html>'
+{'Connection': 'keep-alive', 'Host': 'primary.com', 'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': '44a0e1ea-8255-46bf-9404-1882f0b4baef', 'Accept-Encoding': 'gzip, deflate, br'}
+INFO:root:Connected by ('127.0.0.1', 57483)
+ERROR:root:'HTTPServer' object has no attribute 'handle_DELETE'
+INFO:root:Content-Type: text/html
+
+INFO:root:DELETE
+b'HTTP/1.1 501 Not Implemented\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <title>501 page</title>\n</head>\n\n<style>\n    body {\n    width: 100vw;\n    height: 100vh;\n    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),\n                  url("");\n}\n\nmain {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translateX(-50%) translateY(-50%);\n    align-items: center;\n    justify-content: center;\n    text-align: center;\n    gap: 20px;\n    display: flex;\n    flex-direction: column;\n\n    * {\n        margin: 0;\n    }\n\n    .title {\n        font-family: sans-serif;\n        color: #fff;\n    }\n    .subtitle {\n        font-family: sans-serif;\n        color: #fff;\n    }\n\n    img {\n        width: 200px;\n        height: 200px;\n    }\n}\n</style>\n\n<body>\n    <main class="content">\n        <h1 class="title">501 bad gateway</h1>\n        <p class="subtitle">Something went wrong</p>\n        <img width="200px" height="200px" src="https://i.ytimg.com/vi/dZ2zVhgro3Q/maxresdefault.jpg" alt="robot404" />\n    </main>\n</body>\n</html>'
+{'Connection': 'keep-alive', 'Host': 'primary.com', 'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': '2628be89-d3dd-4c4a-9e58-c267dc38a990', 'Accept-Encoding': 'gzip, deflate, br'}
+INFO:root:Connected by ('127.0.0.1', 60005)
+ERROR:root:'HTTPServer' object has no attribute 'handle_DELETE'
+INFO:root:Content-Type: text/html
+
+INFO:root:DELETE
+b'HTTP/1.1 501 Not Implemented\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <title>501 page</title>\n</head>\n\n<style>\n    body {\n    width: 100vw;\n    height: 100vh;\n    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),\n                  url("");\n}\n\nmain {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translateX(-50%) translateY(-50%);\n    align-items: center;\n    justify-content: center;\n    text-align: center;\n    gap: 20px;\n    display: flex;\n    flex-direction: column;\n\n    * {\n        margin: 0;\n    }\n\n    .title {\n        font-family: sans-serif;\n        color: #fff;\n    }\n    .subtitle {\n        font-family: sans-serif;\n        color: #fff;\n    }\n\n    img {\n        width: 200px;\n        height: 200px;\n    }\n}\n</style>\n\n<body>\n    <main class="content">\n        <h1 class="title">501 bad gateway</h1>\n        <p class="subtitle">Something went wrong</p>\n        <img width="200px" height="200px" src="https://i.ytimg.com/vi/dZ2zVhgro3Q/maxresdefault.jpg" alt="robot404" />\n    </main>\n</body>\n</html>'
+{'Connection': 'keep-alive', 'Host': 'primary.com', 'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': 'a8f188cd-4177-4da0-8009-0191a5bb82d4', 'Accept-Encoding': 'gzip, deflate, br'}
+INFO:root:Connected by ('127.0.0.1', 60011)
+INFO:root:Content-Type: text/html
+
+INFO:root:Content-Type: text/html
+
+ERROR:root:[Errno 21] Is a directory: 'resources/test1/html/'
+INFO:root:GET
+b'HTTP/1.1 500 Bad Gateway\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <title>501 page</title>\n</head>\n\n<style>\n    body {\n    width: 100vw;\n    height: 100vh;\n    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),\n                  url("");\n}\n\nmain {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translateX(-50%) translateY(-50%);\n    align-items: center;\n    justify-content: center;\n    text-align: center;\n    gap: 20px;\n    display: flex;\n    flex-direction: column;\n\n    * {\n        margin: 0;\n    }\n\n    .title {\n        font-family: sans-serif;\n        color: #fff;\n    }\n    .subtitle {\n        font-family: sans-serif;\n        color: #fff;\n    }\n\n    img {\n        width: 200px;\n        height: 200px;\n    }\n}\n</style>\n\n<body>\n    <main class="content">\n        <h1 class="title">500 bad gateway</h1>\n        <p class="subtitle">Something went wrong</p>\n        <img width="200px" height="200px" src="https://sitechecker.pro/wp-content/uploads/2023/07/500-status-code.png" alt="robot404" />\n    </main>\n</body>\n</html>'
+{'Connection': 'keep-alive', 'Host': 'primary.com', 'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': '9e020561-818b-4dfe-b0aa-88900accdd99', 'Accept-Encoding': 'gzip, deflate, br'}
+INFO:root:Connected by ('127.0.0.1', 60072)
+INFO:root:Content-Type: text/html
+
+INFO:root:GET
+b'HTTP/1.1 300 Multiple Choices\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <title>404 page</title>\n    <link rel="stylesheet" href="global.css">\n</head>\n<style>\n    body {\n    width: 100vw;\n    height: 100vh;\n    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),\n                  url("");\n}\n\nmain {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translateX(-50%) translateY(-50%);\n    align-items: center;\n    justify-content: center;\n    text-align: center;\n    gap: 20px;\n    display: flex;\n    flex-direction: column;\n\n    * {\n        margin: 0;\n    }\n\n    .title {\n        font-family: sans-serif;\n        color: #fff;\n    }\n    .subtitle {\n        font-family: sans-serif;\n        color: #fff;\n    }\n\n    img {\n        width: 200px;\n        height: 200px;\n    }\n}\n</style>\n<body>\n    <main class="content">\n        <h1 class="title">300 multiple choices</h1>\n        <p class="subtitle">Please, try to visit correct page on this resource</p>\n        <img width="200px" height="200px" src="https://sitechecker.pro/wp-content/uploads/2023/09/300-status-code.png" alt="problem_img" />\n    </main>\n</body>\n</html>'
+{'Connection': 'keep-alive', 'Host': 'primary.com', 'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': 'a95fc41a-7044-49cc-b9c1-496efde27cb1', 'Accept-Encoding': 'gzip, deflate, br'}
+INFO:root:Connected by ('127.0.0.1', 60077)
+INFO:root:Content-Type: text/html
+
+INFO:root:GET
+b'HTTP/1.1 300 Multiple Choices\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <title>404 page</title>\n    <link rel="stylesheet" href="global.css">\n</head>\n<style>\n    body {\n    width: 100vw;\n    height: 100vh;\n    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),\n                  url("");\n}\n\nmain {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translateX(-50%) translateY(-50%);\n    align-items: center;\n    justify-content: center;\n    text-align: center;\n    gap: 20px;\n    display: flex;\n    flex-direction: column;\n\n    * {\n        margin: 0;\n    }\n\n    .title {\n        font-family: sans-serif;\n        color: #fff;\n    }\n    .subtitle {\n        font-family: sans-serif;\n        color: #fff;\n    }\n\n    img {\n        width: 200px;\n        height: 200px;\n    }\n}\n</style>\n<body>\n    <main class="content">\n        <h1 class="title">300 multiple choices</h1>\n        <p class="subtitle">Please, try to visit correct page on this resource</p>\n        <img width="200px" height="200px" src="https://sitechecker.pro/wp-content/uploads/2023/09/300-status-code.png" alt="problem_img" />\n    </main>\n</body>\n</html>'
+{'Connection': 'keep-alive', 'Host': 'primary.com', 'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': '28ca8a54-ec2f-47d0-bc46-d97e9cabd3bc', 'Accept-Encoding': 'gzip, deflate, br'}
+INFO:root:Connected by ('127.0.0.1', 60080)
+INFO:root:Content-Type: text/html
+
+INFO:root:GET
+b'HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <title>Title</title>\n</head>\n<body>\nhahahahahhaahhaha\n</body>\n</html>'
+{'Connection': 'keep-alive', 'Host': 'primary.com', 'User-Agent': 'PostmanRuntime/7.37.3', 'Accept': '*/*', 'Postman-Token': '8a7338d5-605a-441d-8bfb-c98b81d99303', 'Accept-Encoding': 'gzip, deflate, br'}
